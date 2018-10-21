@@ -17,10 +17,10 @@ To build the site you need:
 ```bash
 
 # clone this repository
-git clone git@github.com:netlify/my-first-few-deploys.git
+git clone git@github.com:netlify/my-first-netlify-deploys.git
 
 # go to the working directory
-cd my-first-few-deploys
+cd my-first-netlify-deploys
 
 # install dependencies
 yarn
