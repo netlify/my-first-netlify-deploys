@@ -16,9 +16,9 @@ Here are some things to experiment with Netlify, once you've deployed your own c
 
 ### Deploy some changes
 
-This site is generated with a static site generator. And now that you have deployed it, Netlify has set up an automated continuous deployment system for you.  To deploy changes, all you need to do is push your changes to this site's git repository.
+This site is generated with a static site generator. And now that you have deployed it, Netlify has set up an [automated continuous deployment system](https://www.netlify.com/docs/continuous-deployment/) for you.  To deploy changes, all you need to do is push your changes to this site's git repository.
 
-Try making a small change. Perhaps by editing the details.js file to add your name. You can do it directly on Github fo you like. Netlify will notice the change and deploy up update in a minute or so.
+Try making a small change. Perhaps by editing the details.js file to add your name. You can [do it directly on Github]({{ process.env.REPOSITORY_URL }}) if you like. Netlify will notice the change and deploy up update in a minute or so.
 
 ```js
 //  src/data/details.js
