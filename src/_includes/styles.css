@@ -111,6 +111,8 @@ a.btn-white:focus {
 
 
 /**
+* Syntax highlighting
+*
 * xonokai theme for JavaScript, CSS and HTML
 * based on: https://github.com/MoOx/sass-prism-theme-base by Maxime Thirouin ~ MoOx --> http://moox.fr/ , which is Loosely based on Monokai textmate theme by http://www.monokai.nl/
 * license: MIT; http://moox.mit-license.org/
@@ -128,7 +130,8 @@ pre[class*="language-"] {
     white-space: pre-wrap;
     word-wrap: normal;
     font-family: Menlo, Monaco, "Courier New", monospace;
-    line-height: 1.8;
+    line-height: 1.6;
+    font-size: 0.9em;
     color: #76d9e6;
     text-shadow: none;
 }

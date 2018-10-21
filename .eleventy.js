@@ -1,3 +1,8 @@
+// Configuration settings for Eleventy.
+// (The SSG which generates this site)
+// More info: https://www.11ty.io
+
+
 const CleanCSS              = require('clean-css');
 const syntaxHighlightPlugin = require('@11ty/eleventy-plugin-syntaxhighlight');
 
