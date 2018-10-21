@@ -54,12 +54,12 @@ Hmmm, but what to change. It's your site now. Go bananas. Or you could just [ame
 
 ### 3. Add a form
 
-Although Netlify is deploying your site directly to our global [Application Delivery Network](https://www.netlify.com/features/adn) (ADN), meaning that you don;t have an server to maintain, you might still wish to accept form submissions. We can help with that. By adding a standard form element to your site, and giving it a _netlify_ attribute, [we will automatically create the back end for you](https://www.netlify.com/features/#forms), and let you access all form submissions via the [Admin UI](https://app.netlify.com/sites/{{details.sitename}}/forms) or via an [API](https://www.netlify.com/docs/api/#form-submissions).
+Although Netlify is deploying your site directly to our global [Application Delivery Network](https://www.netlify.com/features/adn) (ADN), meaning that you don't have a server to maintain, you might still wish to accept form submissions. We can help with that. By adding a standard form element to your site, and giving it a _netlify_ attribute, [we will automatically create the back end for you](https://www.netlify.com/features/#forms), and let you access all form submissions via the [Admin UI](https://app.netlify.com/sites/{{details.sitename}}/forms) or via an [API](https://www.netlify.com/docs/api/#form-submissions).
 
 Try adding the following HTML to a page on this site. After deploying your change, you will find all submissions to your form right there in your [Netlify Admin](https://app.netlify.com/sites/{{details.sitename}}/forms).
 
 ```html
-<form name="contact" netlify>
+<form name="contact" action="/thanks" netlify>
   <p>
     <label>Name <input type="text" name="name" /></label>
   </p>
@@ -71,6 +71,7 @@ Try adding the following HTML to a page on this site. After deploying your chang
   </p>
 </form>
 ```
+
 
 ### 4. Define redirect rules
 
