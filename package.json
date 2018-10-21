@@ -5,6 +5,10 @@
     "start": "eleventy --serve",
     "build": "eleventy"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/netlify/my-first-few-deploys"
+  },
   "license": "MIT",
   "dependencies": {
     "@11ty/eleventy": "^0.5.4",
