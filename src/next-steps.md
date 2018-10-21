@@ -40,7 +40,16 @@ You can watch the progress of your deploys in the [Netlify Admin for this site](
 
 When you push changes to your master branch (as you did above), Netlify builds and deploys those right away. What if you'd like to stage those changes in a preview? With Netlify's preview builds, the what the effects of a pull request will be.
 
-Try making another change in the git repository. Once again, yu can do this directly on GitHub. Then, instead of committing this to the master branch, ask GitHub to make a new Pull Request of your changes.
+Try making another change in the git repository. Once again, you can do this directly on GitHub. Then, instead of committing this to the master branch, ask GitHub to make a new Pull Request of your changes.
+
+Hmmm, but what to change. It's your site now. Go bananas. Or you could just [amend this page]({{details.repo}}/blob/master/src/next-steps.md) to show your progress by adding a suitably gleeful emoji to the section headings of each of these steps that you've done.
+
+```js
+ // Hmmm, what best suggests "done"?
+
+ 👍 | 😎 | 👏 | ✅ | 🤘
+```
+
 
 
 ### 3. Add a form
