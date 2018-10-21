@@ -72,11 +72,34 @@ Try adding the following HTML to a page on this site. After deploying your chang
 </form>
 ```
 
+### 4. Define redirect rules
 
-### 4. Deploy a serverless function
+The Netlify ADN supports redirect rules. That means that your redirect rules don't run on some origin server (there _is_ no origin server!). Instead, they run directly on the edge nodes located closest to your site users. This makes them blazing fast. But thankfully, not complicated to define.
+
+You can read all about them [in the docs](https://www.netlify.com/docs/headers-and-basic-auth/#structured-configuration). And you can try creating some out for yourself by adding a few lines to the [netlify.toml]({{details.repo}}/blob/master/netlify.toml) file in this repo. This file defines various configurations for Netlify. In addition to defining redirects, proxies, custom 404s, and language redirection rules, you can use it to configure [custom headers](https://www.netlify.com/docs/headers-and-basic-auth/#structured-configuration), set build contexts and lots more.
+
+For now, just add these few lines to your [netlify.toml]({{details.repo}}/blob/master/netlify.toml) to create a new redirect rule.
 
 
-### 5. Define redirect rules
+```makefile
+
+# netlify.toml
+
+...
+
+[[redirects]]
+  from = "/next"
+  to = "/next-steps"
+  status = 302
+
+...
+
+```
+
+Once this has been deployed, you'll be able to access this page via a handy redirect at [/next](/next) and save yourself those extra keystrokes.
+
+
+### 5. Deploy a serverless function
 
 
 
