@@ -1,0 +1,14 @@
+{
+  "name": "first-netlify-deploy",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^0.5.4",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.0",
+    "clean-css": "^4.2.1"
+  }
+}

@@ -1,0 +1,51 @@
+---
+title: I deployed to Netlify!
+---
+{% extends 'layouts/base.njk' %}
+
+{% block header %}
+<h1>
+  🎉 {% if details.twitter %}{{ details.twitter }}{% else %}I{% endif %} deployed this to netlify
+</h1>
+<p>
+  <a href="#get-yours" class="btn btn-white">Want one of your own?</a>
+</p>
+{% endblock %}
+
+
+{% block content %}
+<h2 id="tweet">Tweet to win a Nintendo Switch</h2>
+<p>
+  Now that you have deployed your site, tweet its link to enter a prize drawer to win a Nintendo Switch at {{ details.event }}.
+</p>
+<blockquote>
+  {{ details.tweet }}
+  <p><a href="https://twitter.com/intent/tweet?text={{ details.tweet | urlencode }}" class="btn" target="NEW" rel="noopener">Tweet to enter the prize draw</a></p>
+  <p>
+    <snall>(You'll get the chance to inspect and edit this tweet before you post it)</snall>
+  </p>
+</blockquote>
+
+<h2>What next?</h2>
+<p>
+  Try out a few more of the things that you can do with this once you've deployed to Netlify.
+</p>
+<p>
+  <a href="/next-steps" class="btn">Next steps with Netlify</a>
+</p>
+
+<h2 id="get-yours">Get your own</h2>
+<p>
+  Oh hi! Admiring this site that {% if details.name %}{{ details.name }}{% else %}I{% endif %} deployed? Well, you can get one too.
+</p>
+<p>
+  To deploy your own copy of this site, and enter the prize draw at {{ details.event }}, just click the button below, follow the instructions, and then tweet the link.
+</p>
+<p>
+  <a href="https://app.netlify.com/start/deploy?repository=https://github.com/netlify/netlify-statuskit">
+  <img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify">
+  </a>
+</p>
+
+
+{% endblock %}

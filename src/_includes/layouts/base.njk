@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {%- set css -%}{%- include "styles.css" -%}{% endset -%}
+    <style>{{ css | cssmin | safe }}</style>
+    <title>{%- if title -%}{{ title }}{%- else -%}An example site. Deployed to Netlify{%- endif -%}</title>
+    <meta name="description" content="{%- if description -%}{{ description }}{%- else -%}A simple site. Deployed to Netlify as an demonstration.{%- endif -%}"/>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <img src="/images/netlify-logomark.svg" class="logomark" alt="Netlify">
+        {% block header %}
+          {# Replace this if anything is passed in to the header block #}
+          {% if header %}
+          <h1>{{ header.heading }}</h1>
+          <p>
+            {{ header.subtitle }}
+          </p>
+          {% else %}
+          <h1>
+            🎉 {% if details.twitter %}{{ details.twitter }}{% else %}I{% endif %} deployed this to netlify
+          </h1>
+          <p>
+            <a href="/#tweet" class="btn btn-white">Don't forget to tweet</a>
+          </p>
+          {% endif %}
+        {% endblock %}
+      </div>
+    </header>
+    <div class="main">
+      <div class="container">
+        {% block content %}
+        {{ content | safe }}
+        {% endblock %}
+      </div>
+    </div>
+  </body>
+</html>
