@@ -74,9 +74,9 @@ Try adding the following HTML to a page on this site. After deploying your chang
 
 ### 4. Define redirect rules
 
-The Netlify ADN supports redirect rules. That means that your redirect rules don't run on some origin server (there _is_ no origin server!). Instead, they run directly on the edge nodes located closest to your site users. This makes them blazing fast. But thankfully, not complicated to define.
+The Netlify ADN supports redirect rules. That means that your redirect rules don't run on some an server somewhere (there _is_ no origin server!). Instead, they run directly on the edge nodes located closest to your site users. This makes them blazing fast. But thankfully, not complicated to define.
 
-You can read all about them [in the docs](https://www.netlify.com/docs/headers-and-basic-auth/#structured-configuration). And you can try creating some out for yourself by adding a few lines to the [netlify.toml]({{details.repo}}/blob/master/netlify.toml) file in this repo. This file defines various configurations for Netlify. In addition to defining redirects, proxies, custom 404s, and language redirection rules, you can use it to configure [custom headers](https://www.netlify.com/docs/headers-and-basic-auth/#structured-configuration), set build contexts and lots more.
+You can read all about them [in the docs](https://www.netlify.com/docs/headers-and-basic-auth/#structured-configuration). But first, why not try creating some yourself by adding a few lines to the [netlify.toml]({{details.repo}}/blob/master/netlify.toml) file in this repo. This file defines various configurations for Netlify. In addition to defining redirects, proxies, custom 404s, and language redirection rules, you can use it to configure [custom headers](https://www.netlify.com/docs/headers-and-basic-auth/#structured-configuration), set build contexts and lots more.
 
 For now, just add these few lines to your [netlify.toml]({{details.repo}}/blob/master/netlify.toml) to create a new redirect rule.
 
