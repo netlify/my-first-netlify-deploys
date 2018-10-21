@@ -5,9 +5,6 @@
 // eg: {{ details.name }}
 
 
-
-
-
 module.exports = {
 
   // Your twitter handle
@@ -24,7 +21,7 @@ module.exports = {
 
   // The site name used in the URL of the Netlify Admin UI
   // (Which we can figure out from the deployed URL)
-  sitename: process.env.URL ? process.env.URL.split('https://')[1].split('/netlify.com')[0] : 'playwith',
+  sitename: process.env.URL ? process.env.URL.split('https://')[1].split('.netlify.com')[0] : 'playwith',
 
   // Something to tweet which includes a link to
   // this instance of the example site

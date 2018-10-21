@@ -3,6 +3,14 @@
 
 ...
 
+## Clone and deploy with a click
+
+You can get started with your own version of this site with a couple of clicks. the button below will cline this repo to your own GitHub account and link it to a new site for you on [Netlfy](https://www.netlify.com)
+
+<!-- Markdown snippet -->
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/my-first-netlify-deploys)
+
+...or you can clone it down to your local development machine and run build it there before deploying, if you prefer.
 
 ## Local development
 
