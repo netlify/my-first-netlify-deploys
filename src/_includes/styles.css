@@ -43,6 +43,16 @@ header {
   padding-bottom: 10vh;
 }
 
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #00c7b7;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
 blockquote {
   font-size: 0.8em;
   line-height: 1.6;
