@@ -1,7 +1,7 @@
 
 ## Overview
 
-https://playwith.netlify
+https://playwith.netlify.com
 
 A small example site to generate and deploy.
 
