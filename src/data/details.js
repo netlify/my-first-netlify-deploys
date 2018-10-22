@@ -16,7 +16,7 @@ module.exports = {
   // The event we are at
   event: "Smashing Conference",
 
-  repoURL :  process.env.REPOSITORY_URL,
+  repoURL :  process.env.REPOSITORY_URL | 'none',
 
   // The repository to which this site is linked
   repo : process.env.REPOSITORY_URL
