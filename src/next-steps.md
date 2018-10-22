@@ -11,8 +11,9 @@ header:
 
 Once you've deployed your own copy of this site, here are five things to try as you explore Netlify,
 
+<a name="name">
 
-### 1. Deploy some changes
+### 1. Add your name
 
 This site is generated with a static site generator. And now that you have deployed it, Netlify has set up an [automated continuous deployment system](https://www.netlify.com/docs/continuous-deployment/) for you. To deploy changes, all you need to do is push your changes to this site's git repository.
 
@@ -36,6 +37,8 @@ module.exports = {
 You can watch the progress of your deploys in the [Netlify Admin for this site](https://app.netlify.com/sites/{{details.sitename}}/deploys). From there you'll also be able to instantly [roll back](https://www.netlify.com/docs/versioning-and-rollbacks/) to any previous deploy if you wanted to.
 
 
+<a name="deploy-preview">
+
 ### 2. Create a deploy preview
 
 When you push changes to your master branch (as you did above), Netlify builds and deploys those right away. What if you'd like to stage those changes in a preview? With Netlify's [deploy previews](https://www.netlify.com/docs/continuous-deployment/#branches-deploys), you can see in advance what the effects of a pull request will be.
@@ -51,6 +54,7 @@ Hmmm, but what to change. It's your site now. Go bananas. Or you could just [ame
 ```
 
 
+<a name="form">
 
 ### 3. Add a form
 
@@ -72,6 +76,8 @@ Try adding the following HTML to a page on this site. After deploying your chang
 </form>
 ```
 
+
+<a name="redirects">
 
 ### 4. Define redirect rules
 
@@ -99,6 +105,8 @@ For now, just add these few lines to your [netlify.toml]({{details.repo}}/blob/m
 
 Once this has been deployed, you'll be able to access this page via a handy redirect at [/next](/next) and save yourself those extra keystrokes.
 
+
+<a name="functions">
 
 ### 5. Deploy a serverless function
 

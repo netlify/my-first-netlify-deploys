@@ -8,7 +8,6 @@ layout: layouts/base.njk
 
 Now that you have deployed your site, tweet its link to enter a prize draw to win a Nintendo Switch at {{ details.event }}.
 
-
 > {{ details.tweet }}
 >
 > <a href="https://twitter.com/intent/tweet?text={{ details.tweet | urlencode }}" class="btn" target="NEW" rel="noopener">Tweet to enter the prize draw</a>
@@ -16,11 +15,15 @@ Now that you have deployed your site, tweet its link to enter a prize draw to wi
 ><small>(You'll get the chance to inspect and edit this tweet before you post it)</small>
 
 
-
 <h2>What next?</h2>
 
-Try out a few more of the <a href="/next-steps">things that you can do</a> with this once you've deployed to Netlify.
+Try out a few more of the things that you can do with this once you've deployed to Netlify.
 
+1. [Add your name](/next-steps/#add-your-name)
+1. [Create a deploy preview](/next-steps/#deploy-preview)
+1. [Add a form](/next-steps/#form)
+1. [Define redirect rules](/next-steps/#redirects)
+1. [Deploy a serverless function](/next-steps/#functions)
 
 
 
