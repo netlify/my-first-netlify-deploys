@@ -16,6 +16,8 @@ module.exports = {
   // The event we are at
   event: "Smashing Conference",
 
+  repoURL:  process.env.REPOSITORY_URL | null,
+
   // The repository to which this site is linked
   repo : process.env.REPOSITORY_URL
     ?  process.env.REPOSITORY_URL.replace(':','/').replace('git@', 'https://')
