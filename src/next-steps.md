@@ -3,7 +3,7 @@ title: Next steps with Netlify
 layout: layouts/base.njk
 header:
   heading: Now what?
-  subtitle: Some things to try with Netlify
+  subtitle: Some things to try out with Netlify and your freshly deployed site
 ---
 
 
@@ -16,7 +16,7 @@ Once you've deployed your own copy of this site, here are five things to try as 
 
 This site is generated with a static site generator. And now that you have deployed it, Netlify has set up an [automated continuous deployment system](https://www.netlify.com/docs/continuous-deployment/) for you. To deploy changes, all you need to do is push your changes to this site's git repository.
 
-Try making a small change. Perhaps by editing the [_details.js_]({{details.repo}}/blob/master/src/data/details.js) file to add your name. You can [do it directly on Github]({{details.repo}}/blob/master/src/data/details.js) if you like. Netlify will notice the change and deploy up update in a minute or so.
+Try making a small change. Perhaps by editing the [details.js]({{details.repo}}/blob/master/src/data/details.js) file to add your name. You can [do it directly on Github]({{details.repo}}/blob/master/src/data/details.js) if you like. Netlify will notice the change and deploy up update in a minute or so.
 
 ```js
 // src/data/details.js
@@ -36,11 +36,11 @@ module.exports = {
 You can watch the progress of your deploys in the [Netlify Admin for this site](https://app.netlify.com/sites/{{details.sitename}}/deploys). From there you'll also be able to instantly [roll back](https://www.netlify.com/docs/versioning-and-rollbacks/) to any previous deploy if you wanted to.
 
 
-### 2. Create a preview build
+### 2. Create a deploy preview
 
-When you push changes to your master branch (as you did above), Netlify builds and deploys those right away. What if you'd like to stage those changes in a preview? With Netlify's preview builds, the what the effects of a pull request will be.
+When you push changes to your master branch (as you did above), Netlify builds and deploys those right away. What if you'd like to stage those changes in a preview? With Netlify's [deploy previews](https://www.netlify.com/docs/continuous-deployment/#branches-deploys), you can see in advance what the effects of a pull request will be.
 
-Try making another change in the git repository. Once again, you can do this directly on GitHub. Then, instead of committing this to the master branch, ask GitHub to make a new Pull Request of your changes.
+Try making another change in the git repository. Once again, you can do this directly on GitHub. Then, instead of committing this to the master branch, ask GitHub to make a new pull request of your changes.
 
 Hmmm, but what to change. It's your site now. Go bananas. Or you could just [amend this page]({{details.repo}}/blob/master/src/next-steps.md) to show your progress by adding a suitably gleeful emoji to the section headings of each of these steps that you've done.
 
