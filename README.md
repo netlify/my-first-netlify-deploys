@@ -1,7 +1,9 @@
 
 ## Overview
 
-...
+https://playwith.netlify
+
+A small example site to generate and deploy.
 
 ## Clone and deploy with a click
 
@@ -41,7 +43,7 @@ yarn start
 
 The build command `yarn run build` will generate a set of static assets in a `dist` folder which can be deployed to any web hosting service.
 
-[Netlify](http://www.netlify.com) will run this build process in a CI environment and then deploy the build to automatically to a global CDN. Such deployments are [triggered automatically](https://www.netlify.com/docs/continuous-deployment/) by every git push to the `master` branch of the origin repository.
+[Netlify](http://www.netlify.com) will run this build process in a CI environment and then deploy the build automatically to a global CDN. Such deployments are [triggered automatically](https://www.netlify.com/docs/continuous-deployment/) by every git push to the `master` branch of the origin repository.
 
 
 
