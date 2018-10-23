@@ -4,7 +4,7 @@ layout: layouts/base.njk
 ---
 
 
-<h2 id="tweet">Tweet to win a Nintendo Switch</h2>
+<h2 id="tweet">Deploy and tweet to win a Nintendo Switch</h2>
 
 Now that you have deployed your site, tweet its link to enter a prize draw to win a Nintendo Switch at {{ details.event }}.
 

@@ -16,8 +16,8 @@ You can define any page as the thank you page. You came here because the URL of 
 
 ## Get your submissions
 
-The submissions to your all of your forms are available form the [Admin UI](https://app.netlify.com/sites/{{details.sitename}}/forms), and you can also retrieve them programatically via an API, and configure notifications and other useful things.
+The submissions to your all of your forms are available form the [Admin UI](https://app.netlify.com/sites/{{details.sitename}}/forms), and you can also retrieve them programmatically via an API, and configure notifications and other useful things.
 
 ## What next?
 
-[Head back to the list](/next-steps) of things to try.
+Head back to the [list of things to try](/next-steps).
