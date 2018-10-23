@@ -3,8 +3,7 @@
   publish = "dist"
   functions = "functions"
 
-
 [[redirects]]
   from = "/hello/*"
-  to = "/.netlify/functions/hello/:splat"
+  to = "/.netlify/functions/hello?name=:splat"
   status = 200

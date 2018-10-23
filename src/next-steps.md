@@ -129,7 +129,7 @@ exports.handler = async (event, context) => {
 
 When Netlify deploys your site, it will package this file up with any dependencies and push them to AWS for you. It will then give you a URL to access that serverless function which is relative to the root of your project.
 
-Once deployed, you'll be able to access it at [/.netlify/functions/hello](/.netlify/functions/hello)
+Once deployed, you'll be able to access it at [/.netlify/functions/hello?name=You](/.netlify/functions/hello?name=You)
 
 Try it. Perhaps you might even want to clean up that URL be adding another redirects rule to your [netlify.toml]({{details.repo}}/blob/master/netlify.toml) which also supports wildcards, splats and proxying.
 
@@ -141,7 +141,7 @@ Try it. Perhaps you might even want to clean up that URL be adding another redir
 
 [[redirects]]
   from = "/hello/*"
-  to = "/.netlify/functions/hello/:splat"
+  to = "/.netlify/functions/hello?name=:splat"
   status = 200
 
 ...
