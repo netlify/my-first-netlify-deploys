@@ -2,8 +2,10 @@
   "name": "first-netlify-deploy",
   "version": "1.0.0",
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy"
+    "start": "eleventy --serve & yarn run start:lambda",
+    "build": "eleventy & yarn run build:lambda",
+    "start:lambda": "netlify-lambda serve src/lambda",
+    "build:lambda": "netlify-lambda build src/lambda"
   },
   "repository": {
     "type": "git",
@@ -13,6 +15,15 @@
   "dependencies": {
     "@11ty/eleventy": "^0.5.4",
     "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.0",
-    "clean-css": "^4.2.1"
+    "clean-css": "^4.2.1",
+    "netlify-lambda": "^1.0.2"
+  },
+  "proxy": {
+    "/.netlify/functions": {
+      "target": "http://localhost:9000",
+      "pathRewrite": {
+        "^/\\.netlify/functions": ""
+      }
+    }
   }
 }
