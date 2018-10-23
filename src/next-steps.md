@@ -106,9 +106,6 @@ For now, just add these few lines to your [netlify.toml]({{details.repo}}/blob/m
 Once this has been deployed, you'll be able to access this page via a handy redirect at [/next](/next) and save yourself those extra keystrokes.
 
 
-<a name="functions">
-
-### 5. Deploy a serverless function
 
 
 
