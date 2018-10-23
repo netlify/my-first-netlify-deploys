@@ -11,7 +11,7 @@ header:
 
 Once you've deployed your own copy of this site, here are five things to try as you explore Netlify,
 
-<a name="name">
+<a name="name"></a>
 
 ### 1. Add your name
 
@@ -37,7 +37,7 @@ module.exports = {
 You can watch the progress of your deploys in the [Netlify Admin for this site](https://app.netlify.com/sites/{{details.sitename}}/deploys). From there you'll also be able to instantly [roll back](https://www.netlify.com/docs/versioning-and-rollbacks/) to any previous deploy if you wanted to.
 
 
-<a name="deploy-preview">
+<a name="deploy-preview"></a>
 
 ### 2. Create a deploy preview
 
@@ -54,7 +54,7 @@ Hmmm, but what to change. It's your site now. Go bananas. Or you could just [ame
 ```
 
 
-<a name="form">
+<a name="form"></a>
 
 ### 3. Add a form
 
@@ -77,7 +77,7 @@ Try adding the following HTML to a page on this site. After deploying your chang
 ```
 
 
-<a name="redirects">
+<a name="redirects"></a>
 
 ### 4. Define redirect rules
 
@@ -106,6 +106,50 @@ For now, just add these few lines to your [netlify.toml]({{details.repo}}/blob/m
 Once this has been deployed, you'll be able to access this page via a handy redirect at [/next](/next) and save yourself those extra keystrokes.
 
 
+<a name="functions"></a>
 
+### 5. Deploy a serverless function
+
+To save you from needing to set up accounts and configurations with a cloud provider like AWS, Netlify can manage this for you. This brings all of the deployment workflows available in your site to your serverless functions too.
+
+Let's add a function that Netlify will deploy to AWS Lambda and configure for you. Add this code into a [file in your lambdas]({{details.repo}}/blob/master/src/lambda/hello.js) folder.
+
+```js
+
+// src/lambda/hello.js
+exports.handler = async (event, context) => {
+  const name = event.queryStringParameters.name || "World";
+
+  return {
+    statusCode: 200,
+    body: `Hello, ${name}`
+  };
+};
+```
+
+When Netlify deploys your site, it will package this file up with any dependencies and push them to AWS for you. It will then give you a URL to access that serverless function which is relative to the root of your project.
+
+Once deployed, you'll be able to access it at [/.netlify/functions/hello?name=You](/.netlify/functions/hello?name=You)
+
+Try it. Perhaps you might even want to clean up that URL be adding another redirects rule to your [netlify.toml]({{details.repo}}/blob/master/netlify.toml) which also supports wildcards, splats and proxying.
+
+```makefile
+
+# netlify.toml
+
+...
+
+[[redirects]]
+  from = "/hello/*"
+  to = "/.netlify/functions/hello?name=:splat"
+  status = 200
+
+...
+
+```
+
+### More?
+
+You can get more inspiration for using Functions by taking a look at our [Functions Playground](https://functions-playground.netlify.com)
 
 
