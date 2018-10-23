@@ -11,7 +11,7 @@ header:
 
 Once you've deployed your own copy of this site, here are five things to try as you explore Netlify,
 
-<a name="name" />
+<a name="name"></a>
 
 ### 1. Add your name
 
@@ -37,7 +37,7 @@ module.exports = {
 You can watch the progress of your deploys in the [Netlify Admin for this site](https://app.netlify.com/sites/{{details.sitename}}/deploys). From there you'll also be able to instantly [roll back](https://www.netlify.com/docs/versioning-and-rollbacks/) to any previous deploy if you wanted to.
 
 
-<a name="deploy-preview" />
+<a name="deploy-preview"></a>
 
 ### 2. Create a deploy preview
 
@@ -54,7 +54,7 @@ Hmmm, but what to change. It's your site now. Go bananas. Or you could just [ame
 ```
 
 
-<a name="form" />
+<a name="form"></a>
 
 ### 3. Add a form
 
@@ -77,7 +77,7 @@ Try adding the following HTML to a page on this site. After deploying your chang
 ```
 
 
-<a name="redirects" />
+<a name="redirects"></a>
 
 ### 4. Define redirect rules
 
@@ -106,7 +106,7 @@ For now, just add these few lines to your [netlify.toml]({{details.repo}}/blob/m
 Once this has been deployed, you'll be able to access this page via a handy redirect at [/next](/next) and save yourself those extra keystrokes.
 
 
-<a name="functions" />
+<a name="functions"></a>
 
 ### 5. Deploy a serverless function
 
