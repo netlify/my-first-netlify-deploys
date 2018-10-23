@@ -2,3 +2,9 @@
   command = "yarn run build"
   publish = "dist"
   functions = "functions"
+
+
+[[redirects]]
+  from = "/hello/*"
+  to = "/.netlify/functions/hello/:splat"
+  status = 200

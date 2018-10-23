@@ -110,9 +110,9 @@ Once this has been deployed, you'll be able to access this page via a handy redi
 
 ### 5. Deploy a serverless function
 
-TO save you from needing to set up accounts and configurations with a serverless functions provider like AWS, Netlify can manage this for you. This brings all of the deployment workflows available in your site to your serverless functions too.
+To save you from needing to set up accounts and configurations with a cloud provider like AWS, Netlify can manage this for you. This brings all of the deployment workflows available in your site to your serverless functions too.
 
-Let's add a function that Netlify will deploy to AWS Lambda and configure for you. Add this code into a [file in your lamdas]([netlify.toml]({{details.repo}}/blob/master/src/lambda/hello.js) ) folder.
+Let's add a function that Netlify will deploy to AWS Lambda and configure for you. Add this code into a [file in your lambdas]([netlify.toml]({{details.repo}}/blob/master/src/lambda/hello.js) folder.
 
 ```js
 
@@ -127,11 +127,29 @@ exports.handler = async (event, context) => {
 };
 ```
 
-Whe Netlify deploys your site, it will package this file up with any dependencies and push them to AWS for you. It will then give you a URL to access that serverless function which is relative to the root of your project.
+When Netlify deploys your site, it will package this file up with any dependencies and push them to AWS for you. It will then give you a URL to access that serverless function which is relative to the root of your project.
 
 Once deployed, you'll be able to access it at [/.netlify/functions/hello](/.netlify/functions/hello)
 
-Tyy it. Perhaps you might even want to clean up that URL be adding another redirects rule.
+Try it. Perhaps you might even want to clean up that URL be adding another redirects rule to your [netlify.toml]({{details.repo}}/blob/master/netlify.toml) which also supports wildcards, splats and proxying.
 
+```makefile
+
+# netlify.toml
+
+...
+
+[[redirects]]
+  from = "/hello/*"
+  to = "/.netlify/functions/hello/:splat"
+  status = 200
+
+...
+
+```
+
+### More?
+
+You can get more inspiration for using Functions by taking a look at our [Functions Playground](https://functions-playground.netlify.com)
 
 
