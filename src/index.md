@@ -23,6 +23,7 @@ Try out a few more of the things that you can do with this once you've deployed 
 1. [Create a deploy preview](/next-steps/#deploy-preview)
 1. [Add a form](/next-steps/#form)
 1. [Define redirect rules](/next-steps/#redirects)
+1. [Deploy a serverless function](/next-steps/#functions)
 
 
 
