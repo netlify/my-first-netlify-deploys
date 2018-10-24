@@ -6,7 +6,7 @@
 
 console.log(process.env);
 var repo = process.env.REPOSITORY_URL
-? 'https://' + process.env.REPOSITORY_URL.split('@')[1]
+? process.env.REPOSITORY_URL.replace('git@github.com:','https://github.com/' )
 : 'https://github.com/netlify/my-first-few-deploys';
 console.log("REPO:", repo);
 
@@ -24,7 +24,7 @@ module.exports = {
 
   // The repository to which this site is linked
   repo : process.env.REPOSITORY_URL
-    ? 'https://' + process.env.REPOSITORY_URL.split('@')[1]
+    ? process.env.REPOSITORY_URL.replace('git@github.com:','https://github.com/')
     : 'https://github.com/netlify/my-first-few-deploys',
 
   // The site name used in the URL of the Netlify Admin UI
