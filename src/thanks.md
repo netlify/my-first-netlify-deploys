@@ -21,8 +21,3 @@ The submissions to your all of your forms are available form the [Admin UI](http
 ## What next?
 
 Head back to the [list of things to try](/next-steps).
-
-<hr/>
-
-repo: {{ details.repo }}
-repourl: {{ details.repourl }}

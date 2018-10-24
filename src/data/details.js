@@ -4,8 +4,10 @@
 //
 // eg: {{ details.name }}
 
+console.log(process.env);
 
 module.exports = {
+
 
   // Your twitter handle
   twitter: null,
