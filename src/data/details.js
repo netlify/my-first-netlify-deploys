@@ -4,7 +4,7 @@
 //
 // eg: {{ details.name }}
 
-// console.log(process.env);
+console.log(process.env);
 var repo = process.env.REPOSITORY_URL
 ? 'https://' + process.env.REPOSITORY_URL.split('@')[1]
 : 'https://github.com/netlify/my-first-few-deploys';
