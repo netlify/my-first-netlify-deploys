@@ -5,8 +5,10 @@
 // eg: {{ details.name }}
 
 // console.log(process.env);
-var repo = 'https://' + process.env.REPOSITORY_URL.split('@')[1];
-console.log(repo);
+var repo = process.env.REPOSITORY_URL
+? 'https://' + process.env.REPOSITORY_URL.split('@')[1]
+: 'https://github.com/netlify/my-first-few-deploys';
+console.log("REPO:", repo);
 
 module.exports = {
 
