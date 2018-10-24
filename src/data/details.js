@@ -4,12 +4,6 @@
 //
 // eg: {{ details.name }}
 
-console.log(process.env);
-var repo = process.env.REPOSITORY_URL
-? process.env.REPOSITORY_URL.replace('git@github.com:','https://github.com/' )
-: 'https://github.com/netlify/my-first-few-deploys';
-console.log("REPO:", repo);
-
 module.exports = {
 
 
