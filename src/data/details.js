@@ -33,6 +33,7 @@ module.exports = {
 Take a look at my site at ${process.env.URL || 'https://playwith.netlify.com'}!
 #SwitchToNetlify at #SmashingConf`,
 
-  url: process.env.URL
+  url: process.env.URL,
+  repourl : process.env.REPOSITORY_URL
 
 }
