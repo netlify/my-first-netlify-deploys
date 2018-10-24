@@ -4,7 +4,9 @@
 //
 // eg: {{ details.name }}
 
-console.log(process.env);
+// console.log(process.env);
+var repo = 'https://' + process.env.REPOSITORY_URL.split('@')[1];
+console.log(repo);
 
 module.exports = {
 
