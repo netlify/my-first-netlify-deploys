@@ -3,21 +3,6 @@ title: I deployed to Netlify!
 layout: layouts/base.njk
 ---
 
-{% if details.url != "https://playwith.netlify.com" %}
-<h2 id="tweet">Deploy and tweet to win a Nintendo Switch</h2>
-<p>
-  Now that you have deployed your site, tweet its link to enter a prize draw to win a Nintendo Switch at {{ details.event }}.
-</p>
-
-<blockquote>
-{{ details.tweet }}
-<p>
-  <a href="https://twitter.com/intent/tweet?text={{ details.tweet | urlencode }}" class="btn" target="NEW" rel="noopener">Tweet to enter the prize draw</a>
-</p>
-
-<small>(You'll get the chance to inspect and edit this tweet before you post it)</small>
-</blockquote>
-{% endif %}
 
 <h2 id="get-yours">Get your own</h2>
 
